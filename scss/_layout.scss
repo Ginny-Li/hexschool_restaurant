@@ -35,6 +35,10 @@ header {
         border-bottom: 2px solid white;
       }
     }
+    li:nth-child(4) a:hover, li:last-child a:hover {
+      border-bottom: none;
+      color:$orange;
+    }
   }
   .hamburger {
     display: none;

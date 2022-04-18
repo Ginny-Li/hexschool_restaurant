@@ -58,6 +58,10 @@ header ul li a:hover {
   transition: all 0.5s;
   border-bottom: 2px solid white;
 }
+header ul li:nth-child(4) a:hover, header ul li:last-child a:hover {
+  border-bottom: none;
+  color: #f56c23;
+}
 header .hamburger {
   display: none;
 }

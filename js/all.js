@@ -15,3 +15,8 @@ $("button.hamburger").on("click", function(){
     $('.hamburger-list').toggle();
     ;
   });
+
+  $(".hamburger-list li").on("click", function(){
+    $('button.hamburger').toggleClass("is-active")
+    $('.hamburger-list').toggle();
+  });
