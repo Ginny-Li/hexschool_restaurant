@@ -1,0 +1,107 @@
+.login-container {
+  background-color: $background-color-gary;
+  padding: 50px 42px;
+  h1 {
+    font-size: $title-l;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+
+  form {
+    border-top: 3px solid $orange;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+    padding: 12px 15px 15px 15px;
+    background-color: $background-color-footer;
+    margin: 35px auto 0 auto;
+    h3 {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+    }
+
+    .btn {
+      margin-top: 30px;
+      width: 120px;
+    }
+    .btn.gary {
+      @include button($gary);
+    }
+    .btn.gary:hover {
+      transition: all 0.5s;
+      background-color: $green;
+    }
+    .btn.orange {
+      @include button($orange);
+      margin-left: 20px;
+    }
+
+    .btn.orange:hover {
+        transition: all 0.5s;
+        background-color:$font-color;
+      }
+    input {
+      @include input();
+    }
+  }
+  .login-form {
+    width: 300px;
+
+    .input-l {
+      width: 270px;
+    }
+    p {
+      font-size: $font-m;
+      color: $orange;
+    }
+  }
+  .register-form {
+    display: none;
+    width: 620px;
+    padding: 15px;
+    .box {
+      display: flex;
+      justify-content: space-around;
+      .box-left {
+        width: 285px;
+      }
+      .box-right {
+        width: 285px;
+        .input-l {
+          width: 285px;
+          margin-bottom: 15px;
+        }
+        .btn {
+          margin-left: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .login-container {
+    .register-form{
+      width: 300px;
+      .box {
+        flex-direction: column;
+        align-items: center;
+        .box-left{
+          margin-bottom: 20px;
+          p{
+            padding:5px;
+          }
+        }
+        
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .login-container {
+    padding: 50px 5px;
+  }
+}
